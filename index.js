@@ -38,9 +38,10 @@ app.post("/subscribe", (request, response) => {
     .catch(error => console.error(error));
 });
 
-// Subscribe Route
+// Subscribe Route, basically it will be post route for original test
 app.get("/post-notification", (request, response) => {
   // Get pushSubscription object
+  // check for generated static object
   const subscription = {
     endpoint: 'https://updates.push.services.mozilla.com/wpush/v2/gAAAAABhAa_RtK8AOw7yPnaIBVJ9g62sGHxmtZF4s2b46FYxAPwXu2H3YMERQ90jig9fhwehNOyAxLlo1PvJPGKfgSro7rb9N288uJ9xf0xEpn19Pfm-HuE49fGQUbzqaovGAyBMDjFsk5w3dDjdXGGtqQv_9k0s0dsNYvTAq-Wudg6pgLUDXbk',
     keys: {
